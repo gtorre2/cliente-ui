@@ -11,7 +11,6 @@ import * as messages from '../../components/toastr'
 import ClienteService from '../../app/service/clienteService'
 import LocalStorageService from '../../app/service/localstorageService'
 
-
 class CadastroClientes extends React.Component {
 
     state = {
@@ -238,7 +237,7 @@ class CadastroClientes extends React.Component {
                     <div className="col-md-4">
                         <FormGroup id="inputNumero" label="Número:" >
                             <InputMask id="inputNumero"
-                                   mask="(99)?9999-9999"
+                                   mask="(99)99999-9999"
                                    className="form-control" 
                                    name="numeroTelefone"
                                    value={this.state.numeroTelefone}
