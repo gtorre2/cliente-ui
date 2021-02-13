@@ -272,4 +272,5 @@ class CadastroClientes extends React.Component {
     }
 }
 
+
 export default withRouter(CadastroClientes);
