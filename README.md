@@ -1,3 +1,5 @@
+Depois que o sistema estiver aberto no navegador colocar o seguinte endereço: http://localhost:3000/#/login
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
