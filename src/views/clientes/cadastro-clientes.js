@@ -81,8 +81,10 @@ class CadastroClientes extends React.Component {
     }
 
     atualizar = () => {
+        const usuarioLogado = LocalStorageService.obterItem('_usuario_logado')
         const { nome, email, cpf, tipo, cep, logradouro, bairro, cidade, uf, numeroTelefone, id } = this.state;
-        const cliente = { nome, email, cpf, tipo, cep, logradouro, bairro, cidade, uf, numeroTelefone, id };
+
+        const cliente = { nome, email, cpf, tipo, cep, logradouro, bairro, cidade, uf, numeroTelefone, usuario: usuarioLogado.id, id };
         
         this.service.atualizar(cliente)
             .then(response => {
